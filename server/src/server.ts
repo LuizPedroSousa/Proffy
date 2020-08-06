@@ -1,20 +1,11 @@
 import express from 'express';
-
+import routers from './routers';
+import Cors from 'cors';
 const app = express();
 
 app.use(express.json());
-
-const user = [
-    { name: "Luiz", age: 25 },
-    { name: "Roberto", age: 16 },
-    { name: "Sthephan", age: 17 },
-];
-
-app.post("/", (req, res) => {
-    console.log(req.query);
-    console.log(req.body);
-    return res.json(user);
-});
+app.use(Cors());
+app.use(routers);
 
 const Port = 3333
 app.listen(Port, () => {
