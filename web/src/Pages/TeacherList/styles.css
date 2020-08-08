@@ -11,6 +11,35 @@
     color: var(--color-text-in-primary);
 }
 
+#search-teachers button {
+    border: 1px solid var(--color-primary-light);
+    height: 5.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5.3rem;
+    margin: 0 auto;
+    border-radius: 50%;
+    margin-top: 3.4rem;
+    background-color: var(--color-primary-lighter);
+    transition: background-color 0.2s;
+    cursor: pointer;
+}
+
+.fa-searchengin{
+    font-size: 2.6rem;
+    color: var(--color-input-background);
+}
+
+#search-teachers button:hover{
+    background-color: var(--color-primary-dark);
+}
+
+#search-teachers button:hover .fa-searchengin{
+    color: var(--color-text-in-primary);
+}
+
+
 #page-teacher-list main{
     margin: 3.2rem auto;
     width: 90%;
@@ -23,11 +52,10 @@
 
     #search-teachers{
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         column-gap: 16px;
         position: absolute;
         bottom: -28px;
-        grid-template-areas: "input";
     }
 
     #page-teacher-list main{
