@@ -10,9 +10,11 @@
 - Css
 
 **Backend**
+- Typescript
 - Express
 - Knex
 - SQLite3
 
 **Mobal**
+- Typescript
 - React Native
